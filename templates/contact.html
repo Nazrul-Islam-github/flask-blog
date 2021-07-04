@@ -32,7 +32,7 @@
                             <!-- To make this form functional, sign up at-->
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
-                            <form id="contactForm" accept="/contact" method="POST">
+                            <div id="contactForm">
 
 
                                 <div class="form-floating">
@@ -86,11 +86,11 @@
                                 <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                 <!-- Submit Button-->
                                 <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">Send</button>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-       
+       <script src="{{ url_for ('static', filename= 'js/post_contact.js') }}"></script>
         {% endblock %}
